@@ -39,5 +39,5 @@ msg_dialog_finished <- lapply(msg_dialog_finished, iconv, to = "UTF-8")
 msg_info <- lapply(msg_info, iconv, to = "UTF-8")
 msg_scrape <- lapply(msg_scrape, iconv, to = "UTF-8")
 
-devtools::use_data(msg_make_dialog, msg_dialog_finished, msg_info, msg_scrape,
+usethis::use_data(msg_make_dialog, msg_dialog_finished, msg_info, msg_scrape,
                    internal = T, overwrite = T)
